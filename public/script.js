@@ -122,7 +122,7 @@ async function pay() {
     startTimer();
 
     try {
-        const res = await fetch('http://localhost:3000/api/pay', {
+        const res = await fetch('/api/pay', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
